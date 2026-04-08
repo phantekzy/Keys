@@ -5,3 +5,5 @@ export interface KeyConfig {
   lable: string;
   width?: number;
 }
+
+export type KeyboardState = Record<string, KeyStatus>;
