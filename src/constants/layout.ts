@@ -63,4 +63,18 @@ export const KEYBOARD_LAYOUT: KeyConfig[][] = [
     { code: "Quote", label: "'" },
     { code: "Enter", label: "ENTER", width: 2.2 },
   ],
+  [
+    { code: "ShiftLeft", label: "SHIFT", width: 2.3 },
+    { code: "KeyZ", label: "Z" },
+    { code: "KeyX", label: "X" },
+    { code: "KeyC", label: "C" },
+    { code: "KeyV", label: "V" },
+    { code: "KeyB", label: "B" },
+    { code: "KeyN", label: "N" },
+    { code: "KeyM", label: "M" },
+    { code: "Comma", label: "," },
+    { code: "Period", label: "." },
+    { code: "Slash", label: "/" },
+    { code: "ShiftRight", label: "SHIFT", width: 2.8 },
+  ],
 ];
