@@ -77,4 +77,12 @@ export const KEYBOARD_LAYOUT: KeyConfig[][] = [
     { code: "Slash", label: "/" },
     { code: "ShiftRight", label: "SHIFT", width: 2.8 },
   ],
+  [
+    { code: "ControlLeft", label: "CTRL", width: 1.25 },
+    { code: "MetaLeft", label: "WIN", width: 1.25 },
+    { code: "AltLeft", label: "ALT", width: 1.25 },
+    { code: "Space", label: " ", width: 6.25 },
+    { code: "AltRight", label: "ALT", width: 1.25 },
+    { code: "ControlRight", label: "CTRL", width: 1.25 },
+  ],
 ];
