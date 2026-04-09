@@ -2,7 +2,7 @@ export type KeyStatus = "idle" | "pressed" | "tested";
 
 export interface KeyConfig {
   code: string;
-  lable: string;
+  label: string;
   width?: number;
 }
 
