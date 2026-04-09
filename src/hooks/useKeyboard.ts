@@ -8,4 +8,7 @@ export const useKeyboard = () => {
     e.preventDefault();
     setKeyState((prev) => ({ ...prev, [e.code]: "pressed" }));
   }, []);
+  const handleKeyUp = useCallback((e: KeyboardEvent) => {
+    setKeyState((prev) => ({ ...prev, [e.code]: "tested" }));
+  }, []);
 };
