@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import type { KeyboardState } from "../types/keyboard";
 
 export const useKeyboard = () => {
@@ -12,4 +12,9 @@ export const useKeyboard = () => {
   const handleKeyUp = useCallback((e: KeyboardEvent) => {
     setKeyState((prev) => ({ ...prev, [e.code]: "tested" }));
   }, []);
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("keyup", handleKeyUp);
+  });
 };
