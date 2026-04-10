@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 :root {
   --bg-color: #080808;
   --frame-color: #121212;
@@ -6,6 +7,40 @@
   --accent-glow: #00ffcc;
   --tested-color: #0a2f28;
 }
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  font-family: "Inter", system-ui, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-viewport {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95vw;
+}
+
+.glass-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.glass-header h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  margin: 0;
+  color: var(--accent-glow);
+  text-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+}
+
 .keyboard-frame {
   background: var(--frame-color);
   padding: 24px;
@@ -15,11 +50,13 @@
   width: 100%;
   max-width: 1100px;
 }
+
 .keyboard-row {
   display: flex;
   gap: 8px;
   margin-bottom: 8px;
 }
+
 .key-cap {
   height: 60px;
   background: var(--key-idle);
@@ -30,15 +67,49 @@
   transition: all 0.05s ease-out;
   border: 1px solid #2a2a2a;
 }
+
 .key-label {
   font-size: 0.75rem;
   font-weight: 700;
   color: #666;
   text-transform: uppercase;
 }
-.key-cap pressed {
+
+/* Logic Transitions */
+.key-cap.pressed {
   background: var(--accent-glow);
   transform: scale(0.95) translateY(4px);
   box-shadow: 0 0 30px var(--accent-glow);
   border-color: #fff;
+}
+
+.key-cap.pressed .key-label {
+  color: #000;
+}
+
+.key-cap.tested {
+  background: var(--tested-color);
+  border-color: var(--accent-glow);
+}
+
+.key-cap.tested .key-label {
+  color: var(--accent-glow);
+}
+
+.reset-trigger {
+  margin-top: 4rem;
+  background: transparent;
+  border: 1px solid #333;
+  color: #555;
+  padding: 12px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.reset-trigger:hover {
+  border-color: var(--accent-glow);
+  color: var(--accent-glow);
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
 }
