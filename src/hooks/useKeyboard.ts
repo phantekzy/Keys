@@ -21,4 +21,6 @@ export const useKeyboard = () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [handleKeyDown, handleKeyUp]);
+
+  return { keyState, reset: () => setKeyState({}) };
 };
