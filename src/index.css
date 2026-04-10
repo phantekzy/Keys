@@ -17,6 +17,13 @@
   border: 1px solid #2a2a2a;
 }
 
+.key-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+}
+
 .key-cap pressed {
   background: var(--accent-glow);
   transform: scale(0.95) translateY(4px);
