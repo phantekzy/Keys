@@ -1,1 +1,12 @@
 @import "tailwindcss";
+:root {
+  --bg-color: #080808;
+  --frame-color: #121212;
+  --key-idle: #1e1e1e;
+  --accent-glow: #00ffcc;
+  --tested-color: #0a2f28;
+}
+.key-cap {
+  height: 60px;
+  background: var(--key-idle);
+}
