@@ -6,6 +6,15 @@
   --accent-glow: #00ffcc;
   --tested-color: #0a2f28;
 }
+.keyboard-frame {
+  background: var(--frame-color);
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #222;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-width: 1100px;
+}
 .key-cap {
   height: 60px;
   background: var(--key-idle);
@@ -16,14 +25,12 @@
   transition: all 0.05s ease-out;
   border: 1px solid #2a2a2a;
 }
-
 .key-label {
   font-size: 0.75rem;
   font-weight: 700;
   color: #666;
   text-transform: uppercase;
 }
-
 .key-cap pressed {
   background: var(--accent-glow);
   transform: scale(0.95) translateY(4px);
