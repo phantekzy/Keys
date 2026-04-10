@@ -1,7 +1,5 @@
 # Keys
 
-Interactive Mechanical Switch Diagnostic Tool
-
 ![Keys Interface](./key.png)
 
 ## Overview
