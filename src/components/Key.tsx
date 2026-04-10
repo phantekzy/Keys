@@ -11,7 +11,8 @@ export const Key = ({ config, status }: Props) => {
             className={`key-cap ${status}`}
             style={{ flexGrow: config.width || 1, flexBasis: 0 }}
         >
-
+            <span
+                className="key-label">{config.label}</span>
         </div>
     )
 }
